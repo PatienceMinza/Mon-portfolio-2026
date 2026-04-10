@@ -146,22 +146,21 @@ section h2::after {
     width: 80%;
     margin: 0 auto;
     border-collapse: collapse;
-    background-color:white;
+    background-color:#fff;
     box-shadow: 0 5px 15px rgba(0,0,0,0.08);
     border-radius: 10px;
     overflow: hidden;
 }
-.compétences table th,.compétences table td{
+.compétences table th,.compétences td{
     padding: 15px;
 }
 .compétences table thead{
     background-color: var(--violet-doux);
-    color: white;
+    color:#fff;
     text-transform: uppercase;
 }
-/* ajoute une bordure de 1px en bas de chaque cellule*/ 
 .compétences table tbody td{
-    border-bottom: 1px solid var(--gris-clair);
+    border-bottom: 1px solod var(--gris-clair);
 }
 
 .compétences table tbody tr:nth-child(even){
@@ -198,4 +197,454 @@ footer a{
 footer a:hover {
     color: var(--orange-vif);
     transform: translateY(-3px);
+}
+.realisation{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350PX,1fr));
+    gap: 50px 30px;
+    padding: 1rem 7rem;
+}
+.realisation .carte{
+    background-color: white;
+    display: block;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 1px 1px var(--gris-clair);
+}
+.realisation .carte .font{
+    height: 350px;
+    border-bottom: 5px solid var(--gris-fonce);
+    overflow: hidden;
+}
+.realisation.carte img{
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    opacity: 0.6;
+}
+.realisation.carte img:hover{
+    transition: 0.3s ease-in-out;
+    scale: 1.1;
+    opacity: 1;    
+}
+.realisation.carte.detail{
+    padding: 1rem;
+}
+.realisation.carte.detail h3 {
+    color: var(--violet-fonce);
+    font-size: 20px;
+    margin-bottom: 1rem;
+}
+.realisation.carte.detail p{
+    color: var(--violet-fonce);
+    font-size: 16px;
+    margin-bottom: 1rem;
+}
+.realisation.carte.detail.tech{
+    display: flex;
+    gap: 20px;
+}
+.realisation.carte.detail.tech a{
+    background-color: var(--gris-clair);
+    text-decoration: none;
+    font-weight: 700;
+    color: var(--violet-fonce);
+    border-radius: 10px;
+    padding: 0 10px;
+    margin-bottom: 1rem;
+    align-self: center;
+}
+.realisation.carte.detail.tech a :hover{
+    transition: 0.2s ease-in-out;
+    background-color: var(--violet-fonce);
+    color: white;
+    font-size: 14px;
+}
+.realisation.carte.ref{
+    display: flex;
+    justify-content: space-between;
+    border-top: 2px solid var(--gris-clair);
+    padding: 1rem;
+}.realisation.carte.ref.partage{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+.realisation.carte.ref.partage p{
+    font-weight: bold;
+}.realisation.carte.ref.partage p :hover,.realisation.carte.ref.partage a : :hover{
+    transition: 0.2s ease-in-out;
+    color:var(--violet-fonce);
+    transform: translate3d(-1px,-2px,)
+}
+
+
+/* Icônes dans les liens (si tu les ajoutes dans le HTML) */
+.realisation a::before {
+    margin-right: 5px;
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+}
+/* --- Styles additionnels pour la page Contact --- */
+
+.contact-section {
+    max-width: 1000px;
+    margin: 6rem auto;
+    padding: 0 2rem;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 4rem;
+    margin-top: 3rem;
+}
+
+.contact-form {
+    flex: 1;
+    background: white;
+    padding: 2.5rem;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: var(--gris-tres-fonce);
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid var(--gris-tres-clair);
+    border-radius: 8px;
+    outline-color: var(--violet-doux);
+}
+
+.btn-submit {
+    width: 100%;
+    background-color: var(--violet-doux);
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 30px;
+    font-weight: 600;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-submit:hover {
+    background-color: var(--violet-fonce);
+}
+
+.contact-info {
+    flex: 1;
+    text-align: left;
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 2rem;
+    font-size: 1.2rem;
+    color: var(--gris-fonce);
+}
+
+.info-item i {
+    color: var(--violet-doux);
+}
+
+.social-box {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.social-box a {
+    text-decoration: none;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 600;
+    transition: transform 0.2s;
+}
+
+.whatsapp { background-color: #25D366; }
+.telegram { background-color: #0088cc; }
+
+.social-box a:hover {
+    transform: scale(1.02);
+    opacity: 0.9;
+}
+
+.phone-display {
+    margin-top: 2rem;
+    color: var(--gris-tres-fonce);
+}
+
+/* Ajustement pour mobile */
+@media (max-width: 768px) {
+    .contact-container {
+        flex-direction: column;
+    }
+}
+
+
+/* --- Grille des réalisations --- */
+.realisation {
+    display: grid;
+    /* Crée 3 colonnes égales */
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 30px; /* Espace entre les cartes */
+    padding: 2rem 5%; /* Espace sur les côtés */
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.carte {
+    background-color: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease;
+}
+
+.carte:hover {
+    transform: translateY(-5px);
+}
+
+/* --- Images des projets --- */
+.carte .font {
+    height: 250px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.carte .font img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* L'image remplit tout l'espace sans se déformer */
+    display: block;
+}
+
+/* --- Contenu de la carte --- */
+.detail {
+    padding: 1.5rem;
+    flex-grow: 1; /* Pousse le contenu vers le bas pour que les cartes aient la même taille */
+    display: flex;
+    flex-direction: column;
+}
+
+.detail h3 {
+    color: var(--violet-fonce);
+    margin-bottom: 0.8rem;
+}
+
+.detail p {
+    color: var(--gris-fonce);
+    font-size: 0.9rem;
+    margin-bottom: 1.5rem;
+}
+
+/* --- Tags Technologies --- */
+.tech {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 1.5rem;
+}
+
+.tech a {
+    background-color: var(--gris-tres-clair);
+    text-decoration: none;
+    color: var(--violet-fonce);
+    padding: 5px 12px;
+    border-radius: 5px;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+/* --- Liens Code & Demo (Espace entre les liens) --- */
+.partage {
+    display: flex;
+    justify-content: space-between; /* Met un lien à gauche et un à droite */
+    align-items: center;
+    border-top: 1px solid var(--gris-clair);
+    padding-top: 1rem;
+    margin-top: auto; /* Aligne toujours en bas de la carte */
+}
+
+.partage a {
+    text-decoration: none;
+    color: var(--violet-doux);
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 8px; /* Espace entre l'icône et le texte */
+}
+
+.partage a:hover {
+    color: var(--orange-vif);
+}
+
+/* --- Responsive : 2 colonnes sur tablette, 1 sur mobile --- */
+@media (max-width: 992px) {
+    .realisation {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .realisation {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/* --- Styles pour la page Passions --- */
+
+.passions-hero {
+    text-align: center;
+    padding: 4rem 2rem;
+    background-color: white;
+    margin-bottom: 2rem;
+}
+
+.passions-hero h2 {
+    margin-bottom: 1rem;
+}
+
+.passions-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    padding: 2rem 5%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.passion-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease;
+}
+
+.passion-card:hover {
+    transform: translateY(-10px);
+    border-bottom: 4px solid var(--violet-doux);
+}
+
+.passion-card i {
+    font-size: 3rem;
+    color: var(--violet-doux);
+    margin-bottom: 1.5rem;
+}
+
+.passion-card h3 {
+    color: var(--violet-fonce);
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+.passion-card p {
+    color: var(--gris-fonce);
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+/* Correction de la couleur de fond du body (espace avant la parenthèse corrigé) */
+body {
+    background-color: var(--gris-tres-clair);
+}
+
+/* --- Styles pour la page Divertissement --- */
+
+.divertissement-header {
+    text-align: center;
+    padding: 5rem 2rem;
+}
+
+.divertissement-container {
+    max-width: 900px;
+    margin: 0 auto 5rem;
+    padding: 0 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.loisir-card {
+    background: white;
+    display: flex;
+    align-items: center;
+    padding: 2rem;
+    border-radius: 20px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.loisir-card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+}
+
+.loisir-icon {
+    background-color: var(--violet-clair, #f0efff); /* une nuance plus claire du violet */
+    color: var(--violet-doux);
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    margin-right: 2rem;
+    flex-shrink: 0;
+}
+
+.loisir-info h3 {
+    color: var(--violet-fonce);
+    margin-bottom: 0.5rem;
+    font-size: 1.4rem;
+}
+
+.loisir-info p {
+    color: var(--gris-fonce);
+    font-size: 1.05rem;
+}
+
+/* Responsive Divertissement */
+@media (max-width: 600px) {
+    .loisir-card {
+        flex-direction: column;
+        text-align: center;
+    }
+    .loisir-icon {
+        margin-right: 0;
+        margin-bottom: 1.5rem;
+    }
+}
+
+body {
+    background-color: white; /* Force le fond en blanc */
+    font-family: Roboto, sans-serif;
+    line-height: 1.6;
 }

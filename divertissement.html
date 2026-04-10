@@ -1,40 +1,77 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>mon portfolio</title>
+    <title>Divertissement - Mon Portfolio</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-     <header>
+    <header>
         <div>
-            <a href="">mon portfolio</a>
+            <a href="index.html">Mon Portfolio</a>
         </div>
         <nav>
             <ul>
-                <li><a href="index.html" >accueil</a></li>
+                <li><a href="index.html">accueil</a></li>
                 <li><a href="projets.html">projets</a></li>
                 <li><a href="passions.html">passion</a></li>
-                <li><a href="divertissement.html"class= "active">divertissement</a></li>
-                <li><a href="contact.html" >contact</a></li>
+                <li><a href="divertissement.html" class="active">divertissement</a></li>
+                <li><a href="contact.html">contact</a></li>
             </ul>
         </nav>
-     </header>
-     <main>
-        <h1>voici mon divertissement</h1>
-     </main>
-     <footer>
-        &copy; 2026 Patience. Tout drois réserver.
-     </footer>
-     <div>
-         <a href=""><i class="fab fa-linkedin"></i></a>
-         <a href=""><i class="fab fa-github"></i></a>
-         <a href=""><i class="fab fa-twitter"></i></a>
-     </div>
+    </header>
+
+    <main>
+        <section class="divertissement-header">
+            <h2>Mes Moments de Détente</h2>
+            <p>Ce qui me permet de recharger les batteries et de rester créative.</p>
+        </section>
+
+        <section class="divertissement-container">
+            <div class="loisir-card">
+                <div class="loisir-icon"><i class="fas fa-music"></i></div>
+                <div class="loisir-info">
+                    <h3>Musique</h3>
+                    <p>La musique m'accompagne dans chaque ligne de code. J'aime découvrir de nouveaux genres, du Jazz au Lo-fi pour la concentration.</p>
+                </div>
+            </div>
+
+            <div class="loisir-card">
+                <div class="loisir-icon"><i class="fas fa-book-open"></i></div>
+                <div class="loisir-info">
+                    <h3>Lecture</h3>
+                    <p>Grandir à travers les livres. Je lis principalement des ouvrages de développement personnel et des romans de science-fiction.</p>
+                </div>
+            </div>
+
+            <div class="loisir-card">
+                <div class="loisir-icon"><i class="fas fa-gamepad"></i></div>
+                <div class="loisir-info">
+                    <h3>Gaming</h3>
+                    <p>Les jeux vidéo sont pour moi un moyen de stimuler ma réactivité et de passer du temps stratégique avec mes amis en ligne.</p>
+                </div>
+            </div>
+
+            <div class="loisir-card">
+                <div class="loisir-icon"><i class="fas fa-camera-retro"></i></div>
+                <div class="loisir-info">
+                    <h3>Photographie</h3>
+                    <p>Capturer l'instant présent. J'aime observer le monde à travers un objectif pour trouver des angles et des perspectives uniques.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        &copy; 2026 Patience. Tout droits réservés.
+        <div>
+            <a href=""><i class="fab fa-linkedin"></i></a>
+            <a href=""><i class="fab fa-github"></i></a>
+            <a href=""><i class="fab fa-twitter"></i></a>
+        </div>
+    </footer>
 </body>
 </html>
